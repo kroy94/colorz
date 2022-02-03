@@ -7,6 +7,8 @@ const { db, Color } = require("./db");
 
 // logging middleware
 app.use(morgan("dev"));
+
+// body parsing middleware
 app.use(express.json());
 
 // static middleware
