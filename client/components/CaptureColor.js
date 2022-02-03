@@ -39,10 +39,10 @@ class CaptureColor extends React.Component {
     }
 }
 
-const mapStateToProps = (reduxState) => {
+const mapStateToProps = (fullreduxState) => {
     return {
-        currentColor: reduxState.currentColor,
-        allSavedColors: reduxState.savedColors
+        currentColor: fullreduxState.currentColor,
+        allSavedColors: fullreduxState.savedColors
     };
 };
 
